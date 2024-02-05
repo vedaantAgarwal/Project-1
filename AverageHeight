@@ -1,0 +1,11 @@
+student_heights = input().split()
+for n in range(0,len(student_heights)):
+    student_heights[n]=int(student_heights[n])
+avg = 0
+n = 0
+for n in student_heights:
+    avg=avg+n
+print(f"Total height : {avg}")
+print(f"Number of students : {n}")
+avg=round(avg/len(student_heights))
+print(f"Average height : {avg}")

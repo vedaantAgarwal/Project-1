@@ -1,0 +1,12 @@
+student_scores = input().split()
+for n in range(0,len(student_scores)):
+    student_scores[n] = int(student_scores[n])
+max=0
+min=100
+for n in student_scores:
+    if max<n:
+        max=n
+    if min>n:
+        min=n
+print(f"The highest score in the class is {max}")
+print(f"The lowest score in the class is {min}")
